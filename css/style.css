@@ -1,0 +1,110 @@
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            background-color: #343a40;
+            padding-top: 20px;
+            color: white;
+            z-index: 1000;
+        }
+        .sidebar .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+        }
+        .sidebar .platform-link {
+            text-align: center;
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .sidebar .platform-link:hover {
+            background-color: #495057;
+        }
+
+        /* Adjust Content Wrapper to Account for Sidebar */
+        .content-wrapper {
+            margin-left: 210px;
+            padding: 20px;
+            margin-top: 60px; /* To adjust below the header */
+        }
+
+        /* Fixed Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 200px;
+            right: 0;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Search Bar Container */
+        .search-container {
+            margin-left: auto;
+            width: 300px;
+        }
+
+        .search-container input {
+            width: 100%;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+
+        /* Application Cards */
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .platform-logo {
+            height: 30px;
+        }
+
+        .btn-download {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .btn-download:hover {
+            background-color: #0056b3;
+        }
+
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #343a40;
+            color: white;
+            border-radius: 8px;
+            padding: 10px;
+            z-index: 1050;
+        }
